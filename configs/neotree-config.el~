@@ -1,0 +1,2 @@
+(require 'neotree)
+(global-set-key [˚] 'neotree-toggle)

@@ -1,8 +1,12 @@
 (source gnu)
 (source melpa)
+(source marmalade)
 
 (depends-on "key-chord")
 (depends-on "company")
+(depends-on "pallet")
+(depends-on "navigate")
+(depends-on "jbeans-theme")
 (depends-on "smartparens")
 (depends-on "projectile")
 (depends-on "smex")
@@ -31,4 +35,3 @@
 (depends-on "emmet-mode")
 (depends-on "grizzl")
 (depends-on "gist")
-(depends-on "osx-clipboard" :git "git@github.com:chrismccord/osx-clipboard-mode.git")
