@@ -18,7 +18,6 @@
 ;;   evil-tmux-navigator-bind-on-evil-window-map nil)
 ;;(evil-tmux-navigator-bind-keys)
 
-
 (load-theme 'jbeans t)
 
 (require 'evil-tmux-navigator)
@@ -30,7 +29,8 @@
 (require 'evil-config)
 (require 'projectile-config)
 (require 'neotree-config)
-
+(require 'powerline-evil)
+(powerline-vim-theme)
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 ;; show line numbers

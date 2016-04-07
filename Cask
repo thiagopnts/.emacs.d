@@ -4,6 +4,8 @@
 
 (depends-on "key-chord")
 (depends-on "company")
+(depends-on "powerline-evil")
+(depends-on "airline-themes")
 (depends-on "pallet")
 (depends-on "navigate")
 (depends-on "jbeans-theme")
