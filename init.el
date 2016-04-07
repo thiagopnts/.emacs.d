@@ -36,6 +36,9 @@
 ;; show line numbers
 (global-linum-mode 1)
 
+;; format line numbers
+(setq linum-format "%4d \u2502 ")
+
 (global-set-key (kbd "≈") 'execute-extended-command)
 
 (provide 'init)
