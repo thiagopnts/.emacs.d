@@ -26,18 +26,24 @@
 
 (require 'pallet-config)
 
-(require 'evil-config)
-(require 'projectile-config)
-(require 'neotree-config)
-(require 'powerline-evil)
-(powerline-vim-theme)
-(tool-bar-mode -1)
-(menu-bar-mode -1)
-;; show line numbers
+;; show line numbers (these should be set before calling git-gutter
 (global-linum-mode 1)
 
 ;; format line numbers
 (setq linum-format "%4d \u2502 ")
+
+(require 'git-gutter)
+(global-git-gutter-mode)
+
+(require 'evil-config)
+(require 'projectile-config)
+(require 'neotree-config)
+
+(require 'powerline-evil)
+(powerline-vim-theme)
+
+(tool-bar-mode -1)
+(menu-bar-mode -1)
 
 (global-set-key (kbd "≈") 'execute-extended-command)
 
