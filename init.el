@@ -4,6 +4,9 @@
 
 (package-initialize)
 
+;; enable ctrl-u scrolling
+(setq evil-want-C-u-scroll t)
+
 ;;(setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
 ;;                        ("marmalade" . "https://marmalade-repo.org/packages/")
 ;;                        ("melpa" . "https://melpa.org/packages/")))

@@ -1,3 +1,4 @@
+
 (require 'evil)
 (evil-mode 1)
 (global-evil-visualstar-mode 1)
@@ -14,8 +15,6 @@
 ;; Don't wait for any other keys after escape is pressed.
 (setq evil-esc-delay 0)
 
-;; enable ctrl-u scrolling
-(setq evil-want-C-u-scroll t)
 
 ;; Make HJKL keys work in special buffers
 (evil-add-hjkl-bindings magit-branch-manager-mode-map 'emacs
