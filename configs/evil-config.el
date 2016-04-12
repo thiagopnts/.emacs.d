@@ -51,5 +51,32 @@ Repeated invocations toggle between the two most recently open buffers."
   (if (buffer-exists "*Ibuffer*")  (kill-buffer "*Ibuffer*"))
   (switch-to-buffer (other-buffer (current-buffer) 1)))
 
+;; experimental shit
+(define-key evil-normal-state-map "a" 'evil-append)
+(define-key evil-normal-state-map "A" 'evil-append-line)
+(define-key evil-normal-state-map "c" 'evil-change)
+(define-key evil-normal-state-map "C" 'evil-change-line)
+(define-key evil-normal-state-map "d" 'evil-delete)
+(define-key evil-normal-state-map "D" 'evil-delete-line)
+(define-key evil-normal-state-map "i" 'evil-insert)
+(define-key evil-normal-state-map "I" 'evil-insert-line)
+(define-key evil-normal-state-map "J" 'evil-join)
+(define-key evil-normal-state-map "m" 'evil-set-marker)
+(define-key evil-normal-state-map "o" 'evil-open-below)
+(define-key evil-normal-state-map "O" 'evil-open-above)
+(define-key evil-normal-state-map "p" 'evil-paste-after)
+(define-key evil-normal-state-map "P" 'evil-paste-before)
+(define-key evil-normal-state-map "q" 'evil-record-macro)
+(define-key evil-normal-state-map "r" 'evil-replace)
+(define-key evil-normal-state-map "R" 'evil-replace-state)
+(define-key evil-normal-state-map "s" 'evil-substitute)
+(define-key evil-normal-state-map "S" 'evil-change-whole-line)
+(define-key evil-normal-state-map "x" 'evil-delete-char)
+(define-key evil-normal-state-map "X" 'evil-delete-backward-char)
+(define-key evil-normal-state-map "y" 'evil-yank)
+(define-key evil-normal-state-map "Y" 'evil-yank-line)
+
+
+
 (provide 'evil-config)
 
