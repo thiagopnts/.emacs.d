@@ -10,6 +10,8 @@
 (depends-on "navigate")
 (depends-on "jbeans-theme")
 (depends-on "smartparens")
+(depends-on "evil-smartparens")
+(depends-on "tabbar")
 (depends-on "projectile")
 (depends-on "smex")
 (depends-on "evil")

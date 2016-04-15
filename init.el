@@ -35,12 +35,28 @@
 ;; format line numbers
 (setq linum-format "%4d \u2502 ")
 
+;; tabbar settings
+(tabbar-mode 1)
+(setq tabbar-use-images nil)
+
+;; prevent creation of backup files
+(setq make-backup-files nil)
+
+;; disable auto indent
+(when (fboundp 'electric-indent-mode) (electric-indent-mode -1))
+
 (require 'git-gutter)
 (global-git-gutter-mode)
+(custom-set-variables
+  '(git-gutter:update-interval 1))
 
 (require 'evil-config)
 (require 'projectile-config)
 (require 'neotree-config)
+
+(require 'smartparens-config)
+(smartparens-mode)
+(add-hook 'smartparens-enabled-hook #'evil-smartparens-mode)
 
 (require 'powerline-evil)
 (powerline-vim-theme)
